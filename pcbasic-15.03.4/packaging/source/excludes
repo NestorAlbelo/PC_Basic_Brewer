@@ -1,0 +1,10 @@
+files/
+packaging/
+patches/
+test/
+docsrc/
+data/*.SAV
+*.pyc
+*.pyo
+*~
+.git*

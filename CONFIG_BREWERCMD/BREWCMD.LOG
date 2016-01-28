@@ -1,0 +1,22 @@
+; BrewerCMD Output Log File
+;
+; Copyright(C) November 1998, SCI-TEC Instruments Inc.  All rights reserved.
+
+HOST> Communication settings read from BREWCMD.INI
+HOST> Attempting to establish communications on COM1... please wait
+HOST> Trying Cosmac mode at 1200 baud
+HOST> Trying Cosmac mode at 300 baud
+HOST> Communications established
+ANY > 
+HOST> Detected old Brewer
+HOST> Initializing old Brewer to 1200 baud
+HOST> Trying Cosmac mode at 1200 baud
+HOST> Writing firmware bugfixes
+HOST> Using Cosmac mode at 1200 baud, on COM1: tracing is full
+USER> B,0
+ANY > 
+USER> R,1,1,1;O
+ANY >         6
+USER> QUIT
+
+; Log file closed

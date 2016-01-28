@@ -1,0 +1,118 @@
+; BrewerCMD Output Log File
+;
+; Copyright(C) August 1995, SCI-TEC Instruments Inc.  All rights reserved.
+
+BOSS> Attempting to establish communications
+BOSS> Using operating mode at 4800 baud, on port 1: tracing is text
+USER> READLOG
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BWR >  
+BWR >  1995, 257, 17:34:15   Reset No -> Tepid  from  1995  257  17 34 14   until  1995  257  17 33 56  . Counts: 9,0
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:34:15   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 23.399415 Volts.
+BWR >  1995, 257, 17:34:15   New value set for watermark LOOP.RUN.TIME: 509.999990 millisec.
+BWR > All log items reported.
+USER> READLOG
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BWR >  1995, 257, 17:35:39   Flash config checksum error. 
+BWR >  1995, 257, 17:35:39   Reset No -> Tepid  from  1995  257  17 35 39   until  1995  257  17 35 21  . Counts: 12,0
+BWR >  1995, 257, 17:35:39   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:39   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:39   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:39   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:35:40   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 23.399415 Volts.
+BWR >  1995, 257, 17:35:40   New value set for watermark LOOP.RUN.TIME: 442.000008 millisec.
+BWR >  1995, 257, 17:35:41   New value set for watermark LOOP.RUN.TIME: 442.999983 millisec.
+BWR >  1995, 257, 17:35:50   New value set for watermark LOOP.RUN.TIME: 474.000025 millisec.
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BWR >  1995, 257, 17:36:11   Flash config checksum error. 
+BWR >  1995, 257, 17:36:11   Reset No -> Tepid  from  1995  257  17 36 11   until  1995  257  17 35 53  . Counts: 13,0
+BWR >  1995, 257, 17:36:11   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:36:11   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:36:11   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:36:11   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:36:11   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:36:11   Motor 0: IIC communications error 
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BWR >  1995, 257, 17:36:39   Flash config checksum error. 
+BWR >  1995, 257, 17:36:39   Reset No -> Tepid  from  1995  257  17 36 39   until  1995  257  17 36 21  . Counts: 14,0
+BWR >  1995, 257, 17:36:39   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:36:39   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:36:39   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:36:39   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:36:39   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:36:39   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:36:39   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:36:39   Motor 0: IIC communications error 
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BWR >  1995, 257, 17:37:08   Flash config checksum error. 
+BWR >  1995, 257, 17:37:08   Reset No -> Tepid  from  1995  257  17 37 08   until  1995  257  17 36 50  . Counts: 15,0
+BWR >  1995, 257, 17:37:08   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:08   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:08   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:08   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:08   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:08   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:08   Motor 0: IIC communications error 
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BOSS> An exception occurred: QSerial timeout
+BWR > 
+BWR >  1995, 257, 17:37:37   Flash config checksum error. 
+BWR >  1995, 257, 17:37:37   Reset No -> Tepid  from  1995  257  17 37 37   until  1995  257  17 37 18  . Counts: 16,0
+BWR >  1995, 257, 17:37:37   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:37   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:37   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:37   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:37   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:37   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:37   Motor 0: IIC communications error 
+BWR >  1995, 257, 17:37:37   Motor 0: IIC communications error 

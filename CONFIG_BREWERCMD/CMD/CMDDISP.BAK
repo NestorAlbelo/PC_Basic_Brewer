@@ -1,0 +1,128 @@
+/*
+ * cmddisp.cpp
+ *
+ * This file contains the routines used to display and record information
+ *  for the user.
+ *
+ * Copyright(C) 1995, SCI-TEC Instruments Inc.
+ */
+
+#include <ctype.h>
+#include <dos.h>
+#include <strstrea.h>
+#include <time.h>
+#include ".\cmd\cmddisp.hpp"
+
+// Program header
+static char* progHeader[] = {
+	"BrewCMD Communication Utility (V1R2a)",
+	"Copyright(C) March 1998, SCI-TEC Instruments Inc.  All rights reserved.",
+	"Type HELP at any time for help                     Type QUIT to quit",
+	"",
+};
+
+static char *statusStr[] = {
+    "Error       ",
+    "Not accepted",
+    "Ready       ",
+    "Ready       ",
+    "Busy        ",
+    "",
+};
+
+Display::Display(BrewerCMDINI* i)
+{
+char*   temp;
+
+	lastClockUpdate = time(NULL);
+	clrscr();
+    temp = i->getValue("Log File");
+    if(temp == NULL)
+		outFile = new ofstream("brewcmd.log");
+    else
+        outFile = new ofstream(temp);
+    if(outFile->good())
+    {
+        *outFile << "; BrewerCMD Output Log File" << endl
+                 << ";" << endl
+                 << "; " << progHeader[1] << endl << endl;
+    }
+    headerWin.window(1, 1, 80, 3);
+    dataWin.window(1, 5, 80, 22);
+    statusWin.window(1, 24, 80, 25);
+    for(int loop = 0; *progHeader[loop]; loop++)
+        headerWin << endl << progHeader[loop];
+}
+
+Display::~Display(void)
+{
+    delete outFile;
+}
+
+void Display::bossMessage(const char* msg)
+{
+	dataWin << "HOST> " << msg << endl;
+	if(outFile->good())
+		*outFile << "HOST> " << msg << endl;
+}
+
+void Display::brewerMessage(const char* msg)
+{
+	dataWin << "ANY > " << msg << endl;
+	if(outFile->good())
+		*outFile << "ANY > " << msg << endl;
+}
+
+void Display::write(const char* msg)
+{
+    dataWin << msg;
+}
+
+char* Display::getUserInput(void)
+{
+    dataWin << "USER>";
+    while(!kbhit())
+        updateTimeDisplay();
+    dataWin << " ";
+    cin.getline(userText, 250);
+    dataWin << endl;
+    for(int loop = 0; userText[loop]; loop++)
+        userText[loop] = toupper(userText[loop]);
+	if(outFile->good())
+		*outFile << "USER> " << userText << endl;
+    return userText;
+}
+
+void Display::updateStatusWindow(DeviceStatus st)
+{
+    statusWin.rdbuf()->gotoxy(1, 1);
+	statusWin << "Status: " << statusStr[st - R_ERR];
+    updateTimeDisplay();
+}
+
+void Display::updateTimeDisplay(void)
+{
+time_t      t_;
+struct tm*  t;
+char        temp[35];
+
+	t_ = time(NULL);
+	if(difftime(t_, lastClockUpdate) > 0.5)
+    {
+        lastClockUpdate = t_;
+        t = localtime(&t_);
+        strftime(temp, 35, "%a %b %d (%j) %H:%M:%S %Y", t);
+        statusWin.rdbuf()->gotoxy(44, 1);
+        statusWin << temp;
+    }
+}
+
+void Display::wait(double sec)
+{
+time_t  s, t;
+
+	s = time(NULL);
+    do { t = time(NULL); updateTimeDisplay(); }
+        while(difftime(t, s) < sec);
+}
+

@@ -1,0 +1,8 @@
+[Exceptions]
+[Errors]
+%s file not found=%s file not found
+Syntax error in %s in the text %s=Syntax error in %s in the text %s
+timeout=timeout
+Invalid password=Invalid password
+Communications error=Communications error
+This code at line %d in source file %s should not have been executed.=This code at line %d in source file %s should not have been executed.

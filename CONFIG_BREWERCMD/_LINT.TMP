@@ -1,0 +1,1251 @@
+
+--- Module:   except\exchlplt.cpp 
+_
+};
+.\except\except.hpp  154  Info 1712: default constructor not defined for class
+    'BaseException'
+_
+};
+.\except\except.hpp  235  Info 1712: default constructor not defined for class
+    'ExcDebugMsg'
+
+--- Module:   except\excnolog.cpp 
+_
+};
+.\except\except.hpp  154  Info 1712: default constructor not defined for class
+    'BaseException'
+_
+};
+.\except\except.hpp  235  Info 1712: default constructor not defined for class
+    'ExcDebugMsg'
+
+--- Module:   except\excdcmd.cpp 
+_
+};
+.\except\except.hpp  154  Info 1712: default constructor not defined for class
+    'BaseException'
+_
+};
+.\except\except.hpp  235  Info 1712: default constructor not defined for class
+    'ExcDebugMsg'
+
+--- Module:   serial\serial.cpp 
+_
+};
+.\except\except.hpp  154  Info 1712: default constructor not defined for class
+    'BaseException'
+_
+};
+.\except\except.hpp  235  Info 1712: default constructor not defined for class
+    'ExcDebugMsg'
+                                        _
+            operator int() { return baud; }
+.\serial\serial.hpp  32  Warning 641: Converting enum to int
+_
+};
+.\serial\serial.hpp  111  Info 1712: default constructor not defined for class
+    'SerialPort'
+_
+};
+.\serial\serial.hpp  136  Info 1712: default constructor not defined for class
+    'CommPortNotPresent'
+_
+};
+.\serial\serial.hpp  142  Info 1712: default constructor not defined for class
+    'InvalidCommPort'
+_
+};
+.\serial\serial.hpp  148  Info 1712: default constructor not defined for class
+    'InvalidBaudRate'
+_
+};
+.\serial\serial.hpp  154  Info 1712: default constructor not defined for class
+    'SerialXMitError'
+             _
+    xc_exit();
+serial\serial.cpp  55  Warning 534: Ignoring return value of xc_exit(void)
+    (compare with line 83, file g:\swapps\ecl\eclproto.h)
+                                                                _
+    for(BaudRateEnum x=baud110; x<lastBaud; x = BaudRateEnum(x+1))
+serial\serial.cpp  61  Warning 641: Converting enum to int
+                                  _
+        throw InvalidCommPort(port);
+serial\serial.cpp  82  Warning 641: Converting enum to int
+                           _
+    if(xc_tport(port - com1))
+serial\serial.cpp  83  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  83  Warning 641: Converting enum to int
+                                     _
+        throw CommPortNotPresent(port);
+serial\serial.cpp  84  Warning 641: Converting enum to int
+                       _
+    xc_link(port - com1, sig);
+serial\serial.cpp  85  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  85  Warning 641: Converting enum to int
+serial\serial.cpp  85  Warning 641: Converting enum to int
+serial\serial.cpp  85  Warning 534: Ignoring return value of xc_link(int, int)
+    (compare with line 96, file g:\swapps\ecl\eclproto.h)
+                       _
+    xc_init(port - com1, baud, parity, data, stop);
+serial\serial.cpp  86  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  86  Warning 641: Converting enum to int
+serial\serial.cpp  86  Warning 641: Converting enum to int
+serial\serial.cpp  86  Warning 641: Converting enum to int
+serial\serial.cpp  86  Warning 641: Converting enum to int
+serial\serial.cpp  86  Warning 534: Ignoring return value of xc_init(int, int,
+    int, int, int) (compare with line 95, file g:\swapps\ecl\eclproto.h)
+                            _
+    xc_flush(thisPort - com1);
+serial\serial.cpp  87  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  87  Warning 641: Converting enum to int
+serial\serial.cpp  87  Warning 534: Ignoring return value of xc_flush(int)
+    (compare with line 88, file g:\swapps\ecl\eclproto.h)
+                            _
+    xc_flush(thisPort - com1);
+serial\serial.cpp  96  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  96  Warning 641: Converting enum to int
+serial\serial.cpp  96  Warning 534: Ignoring return value of xc_flush(int)
+    (compare with line 88, file g:\swapps\ecl\eclproto.h)
+                           _
+    xc_unlk(thisPort - com1);
+serial\serial.cpp  97  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  97  Warning 641: Converting enum to int
+serial\serial.cpp  97  Warning 534: Ignoring return value of xc_unlk(int)
+    (compare with line 108, file g:\swapps\ecl\eclproto.h)
+                           _
+    xc_unlk(thisPort - com1);
+serial\serial.cpp  106  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  106  Warning 641: Converting enum to int
+serial\serial.cpp  106  Warning 534: Ignoring return value of xc_unlk(int)
+    (compare with line 108, file g:\swapps\ecl\eclproto.h)
+                           _
+    xc_link(thisPort - com1, thisHs);
+serial\serial.cpp  115  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  115  Warning 641: Converting enum to int
+serial\serial.cpp  115  Warning 641: Converting enum to int
+serial\serial.cpp  115  Warning 534: Ignoring return value of xc_link(int, int)
+    (compare with line 96, file g:\swapps\ecl\eclproto.h)
+                               _
+	xc_init(thisPort - com1, thisBaud, thisParity, thisData, thisStop);
+serial\serial.cpp  116  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  116  Warning 641: Converting enum to int
+serial\serial.cpp  116  Warning 641: Converting enum to int
+serial\serial.cpp  116  Warning 641: Converting enum to int
+serial\serial.cpp  116  Warning 641: Converting enum to int
+serial\serial.cpp  116  Warning 534: Ignoring return value of xc_init(int, int,
+    int, int, int) (compare with line 95, file g:\swapps\ecl\eclproto.h)
+                           _
+    xc_init(thisPort - com1, baud, parity, data, stop);
+serial\serial.cpp  136  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  136  Warning 641: Converting enum to int
+serial\serial.cpp  136  Warning 641: Converting enum to int
+serial\serial.cpp  136  Warning 641: Converting enum to int
+serial\serial.cpp  136  Warning 641: Converting enum to int
+serial\serial.cpp  136  Warning 534: Ignoring return value of xc_init(int, int,
+    int, int, int) (compare with line 95, file g:\swapps\ecl\eclproto.h)
+                                 _
+    return xc_brk(thisPort - com1, control);
+serial\serial.cpp  146  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  146  Warning 641: Converting enum to int
+                                  _
+    return xc_getc(thisPort - com1);
+serial\serial.cpp  181  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  181  Warning 641: Converting enum to int
+                             _
+    xc_uflush(thisPort - com1);
+serial\serial.cpp  202  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  202  Warning 641: Converting enum to int
+serial\serial.cpp  202  Warning 534: Ignoring return value of xc_uflush(int)
+    (compare with line 107, file g:\swapps\ecl\eclproto.h)
+                                 _
+    temp = xc_put(thisPort - com1, ch, &sent);
+serial\serial.cpp  203  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  203  Warning 641: Converting enum to int
+                                  _
+    return xc_test(thisPort - com1);
+serial\serial.cpp  232  Warning 656: Arithmetic operation uses (compatible)
+    enum's
+serial\serial.cpp  232  Warning 641: Converting enum to int
+
+    --- Wrap-up for Module: serial\serial.cpp
+
+Info 766: Header file 'g:\swapps\ecl\xc.h' not used in module
+    'serial\serial.cpp'
+
+--- Module:   qserial\qserial.cpp 
+_
+};
+.\except\except.hpp  154  Info 1712: default constructor not defined for class
+    'BaseException'
+_
+};
+.\except\except.hpp  235  Info 1712: default constructor not defined for class
+    'ExcDebugMsg'
+_
+};
+.\serial\serial.hpp  111  Info 1712: default constructor not defined for class
+    'SerialPort'
+_
+};
+.\serial\serial.hpp  136  Info 1712: default constructor not defined for class
+    'CommPortNotPresent'
+_
+};
+.\serial\serial.hpp  142  Info 1712: default constructor not defined for class
+    'InvalidCommPort'
+_
+};
+.\serial\serial.hpp  148  Info 1712: default constructor not defined for class
+    'InvalidBaudRate'
+_
+};
+.\serial\serial.hpp  154  Info 1712: default constructor not defined for class
+    'SerialXMitError'
+_
+};
+.\qserial\qserial.hpp  163  Info 1712: default constructor not defined for
+    class 'MessageExchange'
+                                                    _
+static ofstream traceFile("traceqp.txt", ios::binary);
+qserial\qserial.cpp  22  Warning 641: Converting enum to int
+                                               _
+            traceFile << "received(" << status << "): " << reply << endl;
+qserial\qserial.cpp  138  Warning 641: Converting enum to int
+
+--- Module:   brewport\bascport.cpp 
+_
+};
+.\except\except.hpp  154  Info 1712: default constructor not defined for class
+    'BaseException'
+_
+};
+.\except\except.hpp  235  Info 1712: default constructor not defined for class
+    'ExcDebugMsg'
+_
+};
+.\serial\serial.hpp  111  Info 1712: default constructor not defined for class
+    'SerialPort'
+_
+};
+.\serial\serial.hpp  136  Info 1712: default constructor not defined for class
+    'CommPortNotPresent'
+_
+};
+.\serial\serial.hpp  142  Info 1712: default constructor not defined for class
+    'InvalidCommPort'
+_
+};
+.\serial\serial.hpp  148  Info 1712: default constructor not defined for class
+    'InvalidBaudRate'
+_
+};
+.\serial\serial.hpp  154  Info 1712: default constructor not defined for class
+    'SerialXMitError'
+_
+};
+.\qserial\qserial.hpp  163  Info 1712: default constructor not defined for
+    class 'MessageExchange'
+                        _
+    ~BMessageExchange() { delete cmd; delete reply; }
+.\brewport\brewexc.hpp  49  Warning 1509: base class destructor for class
+    'MessageExchange' is not virtual
+                                 _
+            : MessageExchange(p, new char[maxCmd+3], new char[maxReply+3]),
+.\brewport\brewexc.hpp  41  Info 1732: new in constructor for class
+    BMessageExchange which has no assignment operator
+.\brewport\brewexc.hpp  41  Info 1733: new in constructor for class
+    BMessageExchange which has no copy constructor
+_
+};
+.\brewport\brewexc.hpp  51  Info 1712: default constructor not defined for
+    class 'BMessageExchange'
+
+--- Module:   brewport\bopport.cpp 
+_
+};
+.\except\except.hpp  154  Info 1712: default constructor not defined for class
+    'BaseException'
+_
+};
+.\except\except.hpp  235  Info 1712: default constructor not defined for class
+    'ExcDebugMsg'
+_
+};
+.\serial\serial.hpp  111  Info 1712: default constructor not defined for class
+    'SerialPort'
+_
+};
+.\serial\serial.hpp  136  Info 1712: default constructor not defined for class
+    'CommPortNotPresent'
+_
+};
+.\serial\serial.hpp  142  Info 1712: default constructor not defined for class
+    'InvalidCommPort'
+_
+};
+.\serial\serial.hpp  148  Info 1712: default constructor not defined for class
+    'InvalidBaudRate'
+_
+};
+.\serial\serial.hpp  154  Info 1712: default constructor not defined for class
+    'SerialXMitError'
+_
+};
+.\qserial\qserial.hpp  163  Info 1712: default constructor not defined for
+    class 'MessageExchange'
+                        _
+    ~BMessageExchange() { delete cmd; delete reply; }
+.\brewport\brewexc.hpp  49  Warning 1509: base class destructor for class
+    'MessageExchange' is not virtual
+_
+};
+.\brewport\brewexc.hpp  51  Info 1712: default constructor not defined for
+    class 'BMessageExchange'
+                                                       _
+        sum += ((BMessageExchange*)first)->header[loop];
+brewport\bopport.cpp  39  Info 732: Loss of sign (assignment) (int to unsigned
+    char)
+                               _
+        sum += first->cmd[loop];
+brewport\bopport.cpp  41  Info 732: Loss of sign (assignment) (int to unsigned
+    char)
+                  _
+    put(&(char)sum,1);
+brewport\bopport.cpp  48  Error 50: Attempted to take the address of a
+    non-lvalue
+brewport\bopport.cpp  48  Error 50: Attempted to take the address of a
+    non-lvalue
+                    _
+int             last;       // Last blank in return text
+brewport\bopport.cpp  58  Warning 578: Declaration of 'last' hides
+    'QueuedPort::last' (line 70, file .\qserial\qserial.hpp, module
+    qserial\qserial.cpp)
+                                           _
+        for (loop = 0; loop < strlen(reply); loop++)
+brewport\bopport.cpp  75  Warning 574: Signed-unsigned mix with relational
+                                   _
+            checkSum += reply[loop];
+brewport\bopport.cpp  77  Info 732: Loss of sign (assignment) (int to unsigned
+    char)
+
+    --- Wrap-up for Module: brewport\bopport.cpp
+
+Info 753: local class UndecodableResponse (line 19, file brewport\bopport.cpp)
+    not referenced
+
+--- Module:   motor\device.cpp 
+_
+};
+.\except\except.hpp  154  Info 1712: default constructor not defined for class
+    'BaseException'
+_
+};
+.\except\except.hpp  235  Info 1712: default constructor not defined for class
+    'ExcDebugMsg'
+_
+};
+.\serial\serial.hpp  111  Info 1712: default constructor not defined for class
+    'SerialPort'
+_
+};
+.\serial\serial.hpp  136  Info 1712: default constructor not defined for class
+    'CommPortNotPresent'
+_
+};
+.\serial\serial.hpp  142  Info 1712: default constructor not defined for class
+    'InvalidCommPort'
+_
+};
+.\serial\serial.hpp  148  Info 1712: default constructor not defined for class
+    'InvalidBaudRate'
+_
+};
+.\serial\serial.hpp  154  Info 1712: default constructor not defined for class
+    'SerialXMitError'
+_
+};
+.\qserial\qserial.hpp  163  Info 1712: default constructor not defined for
+    class 'MessageExchange'
+                        _
+    ~BMessageExchange() { delete cmd; delete reply; }
+.\brewport\brewexc.hpp  49  Warning 1509: base class destructor for class
+    'MessageExchange' is not virtual
+_
+};
+.\brewport\brewexc.hpp  51  Info 1712: default constructor not defined for
+    class 'BMessageExchange'
+_
+} DeviceStatus;
+.\motor\device.hpp  39  Info 726: Extraneous comma ignored
+_
+};
+.\motor\device.hpp  81  Warning 1515: Default constructor not available for
+    member 'Device::brewer'
+                                            _
+    Device(QueuedPort& p) : brewer(&p), port(&p) {}
+.\motor\device.hpp  63  Info 1729: Initializer inversion detected for member
+    'Device::port'
+                            _
+            waitUntilReady();
+.\motor\device.hpp  69  Warning 534: Ignoring return value of
+    Device::waitUntilReady(void) (compare with line 77)
+_
+};
+.\motor\device.hpp  81  Info 1712: default constructor not defined for class
+    'Device'
+_
+};
+.\motor\device.hpp  104  Info 1712: default constructor not defined for class
+    'AscDevice'
+                            _
+            waitUntilReady();
+.\motor\device.hpp  134  Warning 534: Ignoring return value of
+    OpDevice::waitUntilReady(void) (compare with line 139)
+_
+};
+.\motor\device.hpp  141  Info 1712: default constructor not defined for class
+    'OpDevice'
+                                    _
+    void stripFormattingChars(void) {}
+.\motor\device.hpp  150  Warning 1511: Member hides non-virtual member
+    OpDevice::stripFormattingChars(void) (line 125)
+_
+};
+.\motor\device.hpp  158  Info 1712: default constructor not defined for class
+    'LoadDevice'
+
+--- Module:   cmd\llcomm.cpp 
+_
+};
+.\except\except.hpp  154  Info 1712: default constructor not defined for class
+    'BaseException'
+_
+};
+.\except\except.hpp  235  Info 1712: default constructor not defined for class
+    'ExcDebugMsg'
+_
+};
+.\serial\serial.hpp  111  Info 1712: default constructor not defined for class
+    'SerialPort'
+_
+};
+.\serial\serial.hpp  136  Info 1712: default constructor not defined for class
+    'CommPortNotPresent'
+_
+};
+.\serial\serial.hpp  142  Info 1712: default constructor not defined for class
+    'InvalidCommPort'
+_
+};
+.\serial\serial.hpp  148  Info 1712: default constructor not defined for class
+    'InvalidBaudRate'
+_
+};
+.\serial\serial.hpp  154  Info 1712: default constructor not defined for class
+    'SerialXMitError'
+_
+};
+.\qserial\qserial.hpp  163  Info 1712: default constructor not defined for
+    class 'MessageExchange'
+                        _
+    ~BMessageExchange() { delete cmd; delete reply; }
+.\brewport\brewexc.hpp  49  Warning 1509: base class destructor for class
+    'MessageExchange' is not virtual
+_
+};
+.\brewport\brewexc.hpp  51  Info 1712: default constructor not defined for
+    class 'BMessageExchange'
+_
+} DeviceStatus;
+.\motor\device.hpp  39  Info 726: Extraneous comma ignored
+_
+};
+.\motor\device.hpp  81  Info 1712: default constructor not defined for class
+    'Device'
+_
+};
+.\motor\device.hpp  104  Info 1712: default constructor not defined for class
+    'AscDevice'
+_
+};
+.\motor\device.hpp  141  Info 1712: default constructor not defined for class
+    'OpDevice'
+                                    _
+    void stripFormattingChars(void) {}
+.\motor\device.hpp  150  Warning 1511: Member hides non-virtual member
+    OpDevice::stripFormattingChars(void) (line 58, file motor\device.cpp)
+_
+};
+.\motor\device.hpp  158  Info 1712: default constructor not defined for class
+    'LoadDevice'
+           _
+    omanip2<T1,T2>(ostream& (_RTLENTRY *_f)(ostream&, T1, T2 ), T1 _z1, T2 _z2 ) :
+g:\swapps\bc45\include\constrea.h  277  Error 10: Expecting ';'
+g:\swapps\bc45\include\constrea.h  277  Error 43: Vacuous type for variable
+    omanip2<int,int>::__created
+g:\swapps\bc45\include\constrea.h  277  Error 10: Expecting ';'
+_
+};
+.\cmd\cmdini.hpp  43  Info 1712: default constructor not defined for class
+    'BrewerCMDINI'
+_
+};
+.\cmd\cmddisp.hpp  55  Info 1712: default constructor not defined for class
+    'Display'
+                                                        _
+typedef enum { loadMode = 0, cosmacMode, operatingMode, } ModeType;
+.\cmd\llcomm.hpp  18  Info 726: Extraneous comma ignored
+_
+};
+.\cmd\llcomm.hpp  89  Info 1712: default constructor not defined for class
+    'LowLevelBrewer'
+_
+};
+.\cmd\llcomm.hpp  96  Info 1712: default constructor not defined for class
+    'MissingDeviceFatal'
+_
+};
+.\cmd\llcomm.hpp  110  Info 1712: default constructor not defined for class
+    'MissingCMDObject'
+_
+{
+cmd\llcomm.cpp  166  Warning 578: Declaration of 'mode' hides
+    'LowLevelBrewer::mode(void)' (line 62, file .\cmd\llcomm.hpp)
+           _
+int status = 1;
+cmd\llcomm.cpp  167  Warning 578: Declaration of 'status' hides
+    'LowLevelBrewer::status(void)' (line 159)
+                                        _
+    try { brewer[mode]->waitUntilReady(); }
+cmd\llcomm.cpp  170  Warning 534: Ignoring return value of Device::waitUntilReady(void)
+    (compare with line 77, file .\motor\device.hpp, module motor\device.cpp)
+                                            _
+        try { brewer[mode]->waitUntilReady(); }
+cmd\llcomm.cpp  173  Warning 534: Ignoring return value of Device::waitUntilReady(void)
+    (compare with line 77, file .\motor\device.hpp, module motor\device.cpp)
+        _
+        {
+cmd\llcomm.cpp  175  Warning 578: Declaration of 'err' hides 'err' (line 171)
+        _
+        }
+cmd\llcomm.cpp  177  Warning 533: function LowLevelBrewer::isCommunicating(enum
+    {...}) should return a value (see line 165)
+cmd\llcomm.cpp  177  Info 715: err (line 174) not referenced
+    _
+    }
+cmd\llcomm.cpp  178  Warning 533: function LowLevelBrewer::isCommunicating(enum
+    {...}) should return a value (see line 165)
+cmd\llcomm.cpp  178  Info 715: err (line 171) not referenced
+                                                                                  _
+                temp[1] = '0' + (SerialPort::BaudRateEnum(b) - SerialPort::baud300);
+cmd\llcomm.cpp  211  Warning 656: Arithmetic operation uses (compatible) enum's
+cmd\llcomm.cpp  211  Warning 641: Converting enum to int
+                                            _
+            ifstream ifile(file, ios::binary);
+cmd\llcomm.cpp  297  Warning 641: Converting enum to int
+                           _
+                ifile.get();
+cmd\llcomm.cpp  301  Warning 534: Ignoring return value of istream::get(void)
+    (compare with line 455, file g:\swapps\bc45\include\iostream.h, module
+    except\exchlplt.cpp)
+                         _
+                addr = -1;
+cmd\llcomm.cpp  307  Warning 570: Loss of sign (assignment) (int to unsigned
+    int)
+                                               _
+                    s << "\x10" << setbase(16) << setw(4) << setfill('0') << (8192U + 64U * addr);
+cmd\llcomm.cpp  315  Error 1058: Initializing a non-const reference typed
+    'smanip<int> &' with a non-lvalue
+cmd\llcomm.cpp  315  Error 1058: Initializing a non-const reference typed
+    'smanip<int> &' with a non-lvalue
+cmd\llcomm.cpp  315  Error 1058: Initializing a non-const reference typed
+    'smanip<int> &' with a non-lvalue
+                                                _
+                        s << " " << setbase(16) << setw(2) << setfill('0') << ifile.get();
+cmd\llcomm.cpp  317  Error 1058: Initializing a non-const reference typed
+    'smanip<int> &' with a non-lvalue
+cmd\llcomm.cpp  317  Error 1058: Initializing a non-const reference typed
+    'smanip<int> &' with a non-lvalue
+cmd\llcomm.cpp  317  Error 1058: Initializing a non-const reference typed
+    'smanip<int> &' with a non-lvalue
+    _
+    }
+cmd\llcomm.cpp  362  Info 788: enum constant loadMode not used within defaulted
+    switch
+cmd\llcomm.cpp  362  Info 788: enum constant operatingMode not used within
+    defaulted switch
+                                         _
+        brewer[curMode]->waitUntilReady();
+cmd\llcomm.cpp  371  Warning 534: Ignoring return value of Device::waitUntilReady(void)
+    (compare with line 77, file .\motor\device.hpp, module motor\device.cpp)
+                                         _
+    brewer[curMode]->sendCommand(cmd, 20);
+cmd\llcomm.cpp  377  Warning 534: Ignoring return value of Device::sendCommand(const
+    char *, int) (compare with line 68, file .\motor\device.hpp, module
+    motor\device.cpp)
+                                   _
+        brewer[m]->waitUntilReady();
+cmd\llcomm.cpp  389  Warning 534: Ignoring return value of Device::waitUntilReady(void)
+    (compare with line 77, file .\motor\device.hpp, module motor\device.cpp)
+
+    --- Wrap-up for Module: cmd\llcomm.cpp
+
+Info 766: Header file 'g:\swapps\bc45\include\time.h' not used in module
+    'cmd\llcomm.cpp'
+
+--- Module:   cmd\cmdcomm.cpp 
+_
+};
+.\except\except.hpp  154  Info 1712: default constructor not defined for class
+    'BaseException'
+_
+};
+.\except\except.hpp  235  Info 1712: default constructor not defined for class
+    'ExcDebugMsg'
+_
+};
+.\serial\serial.hpp  111  Info 1712: default constructor not defined for class
+    'SerialPort'
+_
+};
+.\serial\serial.hpp  136  Info 1712: default constructor not defined for class
+    'CommPortNotPresent'
+_
+};
+.\serial\serial.hpp  142  Info 1712: default constructor not defined for class
+    'InvalidCommPort'
+_
+};
+.\serial\serial.hpp  148  Info 1712: default constructor not defined for class
+    'InvalidBaudRate'
+_
+};
+.\serial\serial.hpp  154  Info 1712: default constructor not defined for class
+    'SerialXMitError'
+_
+};
+.\qserial\qserial.hpp  163  Info 1712: default constructor not defined for
+    class 'MessageExchange'
+                        _
+    ~BMessageExchange() { delete cmd; delete reply; }
+.\brewport\brewexc.hpp  49  Warning 1509: base class destructor for class
+    'MessageExchange' is not virtual
+_
+};
+.\brewport\brewexc.hpp  51  Info 1712: default constructor not defined for
+    class 'BMessageExchange'
+_
+} DeviceStatus;
+.\motor\device.hpp  39  Info 726: Extraneous comma ignored
+_
+};
+.\motor\device.hpp  81  Info 1712: default constructor not defined for class
+    'Device'
+_
+};
+.\motor\device.hpp  104  Info 1712: default constructor not defined for class
+    'AscDevice'
+_
+};
+.\motor\device.hpp  141  Info 1712: default constructor not defined for class
+    'OpDevice'
+                                    _
+    void stripFormattingChars(void) {}
+.\motor\device.hpp  150  Warning 1511: Member hides non-virtual member
+    OpDevice::stripFormattingChars(void) (line 58, file motor\device.cpp)
+_
+};
+.\motor\device.hpp  158  Info 1712: default constructor not defined for class
+    'LoadDevice'
+           _
+    omanip2<T1,T2>(ostream& (_RTLENTRY *_f)(ostream&, T1, T2 ), T1 _z1, T2 _z2 ) :
+g:\swapps\bc45\include\constrea.h  277  Error 10: Expecting ';'
+g:\swapps\bc45\include\constrea.h  277  Error 43: Vacuous type for variable
+    omanip2<int,int>::__created
+g:\swapps\bc45\include\constrea.h  277  Error 10: Expecting ';'
+_
+};
+.\cmd\cmdini.hpp  43  Info 1712: default constructor not defined for class
+    'BrewerCMDINI'
+_
+};
+.\cmd\cmddisp.hpp  55  Info 1712: default constructor not defined for class
+    'Display'
+                                                        _
+typedef enum { loadMode = 0, cosmacMode, operatingMode, } ModeType;
+.\cmd\llcomm.hpp  18  Info 726: Extraneous comma ignored
+_
+};
+.\cmd\llcomm.hpp  89  Info 1712: default constructor not defined for class
+    'LowLevelBrewer'
+_
+};
+.\cmd\llcomm.hpp  96  Info 1712: default constructor not defined for class
+    'MissingDeviceFatal'
+_
+};
+.\cmd\llcomm.hpp  110  Info 1712: default constructor not defined for class
+    'MissingCMDObject'
+              _
+    ~Brewer() {}
+.\cmd\cmdcomm.hpp  26  Warning 1509: base class destructor for class
+    'LowLevelBrewer' is not virtual
+                     _
+    void status(void);
+.\cmd\cmdcomm.hpp  27  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::status(void) (line 159, file cmd\llcomm.cpp)
+                                                                            _
+    void switchTo(ModeType m, SerialPort::BaudRate b = SerialPort::baud4800);
+.\cmd\cmdcomm.hpp  29  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::switchTo(enum {...}, BaudRate) (line 182, file
+    cmd\llcomm.cpp)
+                                     _
+    int loadTopCode(const char* file);
+.\cmd\cmdcomm.hpp  31  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::loadTopCode(const char *) (line 271, file cmd\llcomm.cpp)
+                        _
+    void warmReset(void);
+.\cmd\cmdcomm.hpp  33  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::warmReset(void) (line 338, file cmd\llcomm.cpp)
+                            _
+    int checkSYNStatus(void);
+.\cmd\cmdcomm.hpp  35  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::checkSYNStatus(void) (line 350, file cmd\llcomm.cpp)
+                                 _
+    void command(const char* cmd);
+.\cmd\cmdcomm.hpp  37  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::command(const char *) (line 367, file cmd\llcomm.cpp)
+                                           _
+    char* commandWithReply(const char* cmd);
+.\cmd\cmdcomm.hpp  38  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::commandWithReply(const char *) (line 374, file
+    cmd\llcomm.cpp)
+                                         _
+    void lowLevelCommand(const char* cmd);
+.\cmd\cmdcomm.hpp  40  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::lowLevelCommand(const char *) (line 381, file
+    cmd\llcomm.cpp)
+_
+};
+.\cmd\cmdcomm.hpp  42  Info 1712: default constructor not defined for class
+    'Brewer'
+_
+}
+cmd\cmdcomm.cpp  37  Warning 533: function Brewer::loadTopCode(const char *)
+    should return a value (see line 33)
+_
+}
+cmd\cmdcomm.cpp  49  Warning 533: function Brewer::checkSYNStatus(void) should
+    return a value (see line 45)
+_
+}
+cmd\cmdcomm.cpp  61  Warning 533: function Brewer::commandWithReply(const char
+    *) should return a value (see line 57)
+
+--- Module:   cmd\cmddisp.cpp 
+           _
+    omanip2<T1,T2>(ostream& (_RTLENTRY *_f)(ostream&, T1, T2 ), T1 _z1, T2 _z2 ) :
+g:\swapps\bc45\include\constrea.h  277  Error 10: Expecting ';'
+g:\swapps\bc45\include\constrea.h  277  Error 43: Vacuous type for variable
+    omanip2<int,int>::__created
+g:\swapps\bc45\include\constrea.h  277  Error 10: Expecting ';'
+_
+};
+.\except\except.hpp  154  Info 1712: default constructor not defined for class
+    'BaseException'
+_
+};
+.\except\except.hpp  235  Info 1712: default constructor not defined for class
+    'ExcDebugMsg'
+_
+};
+.\serial\serial.hpp  111  Info 1712: default constructor not defined for class
+    'SerialPort'
+_
+};
+.\serial\serial.hpp  136  Info 1712: default constructor not defined for class
+    'CommPortNotPresent'
+_
+};
+.\serial\serial.hpp  142  Info 1712: default constructor not defined for class
+    'InvalidCommPort'
+_
+};
+.\serial\serial.hpp  148  Info 1712: default constructor not defined for class
+    'InvalidBaudRate'
+_
+};
+.\serial\serial.hpp  154  Info 1712: default constructor not defined for class
+    'SerialXMitError'
+_
+};
+.\qserial\qserial.hpp  163  Info 1712: default constructor not defined for
+    class 'MessageExchange'
+                        _
+    ~BMessageExchange() { delete cmd; delete reply; }
+.\brewport\brewexc.hpp  49  Warning 1509: base class destructor for class
+    'MessageExchange' is not virtual
+_
+};
+.\brewport\brewexc.hpp  51  Info 1712: default constructor not defined for
+    class 'BMessageExchange'
+_
+} DeviceStatus;
+.\motor\device.hpp  39  Info 726: Extraneous comma ignored
+_
+};
+.\motor\device.hpp  81  Info 1712: default constructor not defined for class
+    'Device'
+_
+};
+.\motor\device.hpp  104  Info 1712: default constructor not defined for class
+    'AscDevice'
+_
+};
+.\motor\device.hpp  141  Info 1712: default constructor not defined for class
+    'OpDevice'
+                                    _
+    void stripFormattingChars(void) {}
+.\motor\device.hpp  150  Warning 1511: Member hides non-virtual member
+    OpDevice::stripFormattingChars(void) (line 58, file motor\device.cpp)
+_
+};
+.\motor\device.hpp  158  Info 1712: default constructor not defined for class
+    'LoadDevice'
+_
+};
+.\cmd\cmdini.hpp  43  Info 1712: default constructor not defined for class
+    'BrewerCMDINI'
+_
+};
+.\cmd\cmddisp.hpp  55  Info 1712: default constructor not defined for class
+    'Display'
+                  _
+        outFile = new ofstream("brewcmd.log");
+cmd\cmddisp.cpp  41  Info 1732: new in constructor for class Display which has
+    no assignment operator
+cmd\cmddisp.cpp  41  Info 1733: new in constructor for class Display which has
+    no copy constructor
+                              _
+    cin.getline(userText, 250);
+cmd\cmddisp.cpp  87  Warning 534: Ignoring return value of istream::getline(char
+    *, int, char) (compare with line 444, file g:\swapps\bc45\include\iostream.h,
+    module except\exchlplt.cpp)
+                                                   _
+    statusWin << "Status: " << statusStr[st - R_ERR];
+cmd\cmddisp.cpp  99  Warning 656: Arithmetic operation uses (compatible) enum's
+                                                          _
+        strftime(temp, 35, "%a %b %d (%j) %H:%M:%S %Y", t);
+cmd\cmddisp.cpp  114  Warning 534: Ignoring return value of strftime(char *,
+    unsigned int, const char *, const struct tm *) (compare with line 77, file
+    g:\swapps\bc45\include\time.h, module qserial\qserial.cpp)
+
+    --- Wrap-up for Module: cmd\cmddisp.cpp
+
+Info 766: Header file 'g:\swapps\bc45\include\dos.h' not used in module
+    'cmd\cmddisp.cpp'
+
+--- Module:   cmd\cmdini.cpp 
+_
+};
+.\cmd\cmdini.hpp  43  Info 1712: default constructor not defined for class
+    'BrewerCMDINI'
+                 _
+        readINI();
+cmd\cmdini.cpp  22  Warning 534: Ignoring return value of BrewerCMDINI::readINI(void)
+    (compare with line 30, file .\cmd\cmdini.hpp, module cmd\llcomm.cpp)
+                                         _
+            ifile.getline(temp, 80, '\n');
+cmd\cmdini.cpp  64  Warning 534: Ignoring return value of istream::getline(char
+    *, int, char) (compare with line 444, file g:\swapps\bc45\include\iostream.h,
+    module except\exchlplt.cpp)
+                                            _
+            ifile.getline(&temp[1], 79, '=');
+cmd\cmdini.cpp  68  Warning 534: Ignoring return value of istream::getline(char
+    *, int, char) (compare with line 444, file g:\swapps\bc45\include\iostream.h,
+    module except\exchlplt.cpp)
+                                         _
+            ifile.getline(temp, 80, '\n');
+cmd\cmdini.cpp  74  Warning 534: Ignoring return value of istream::getline(char
+    *, int, char) (compare with line 444, file g:\swapps\bc45\include\iostream.h,
+    module except\exchlplt.cpp)
+
+--- Module:   cmd\brewcmd.cpp 
+           _
+    omanip2<T1,T2>(ostream& (_RTLENTRY *_f)(ostream&, T1, T2 ), T1 _z1, T2 _z2 ) :
+g:\swapps\bc45\include\constrea.h  277  Error 10: Expecting ';'
+g:\swapps\bc45\include\constrea.h  277  Error 43: Vacuous type for variable
+    omanip2<int,int>::__created
+g:\swapps\bc45\include\constrea.h  277  Error 10: Expecting ';'
+_
+};
+.\except\except.hpp  154  Info 1712: default constructor not defined for class
+    'BaseException'
+_
+};
+.\except\except.hpp  235  Info 1712: default constructor not defined for class
+    'ExcDebugMsg'
+_
+};
+.\serial\serial.hpp  111  Info 1712: default constructor not defined for class
+    'SerialPort'
+_
+};
+.\serial\serial.hpp  136  Info 1712: default constructor not defined for class
+    'CommPortNotPresent'
+_
+};
+.\serial\serial.hpp  142  Info 1712: default constructor not defined for class
+    'InvalidCommPort'
+_
+};
+.\serial\serial.hpp  148  Info 1712: default constructor not defined for class
+    'InvalidBaudRate'
+_
+};
+.\serial\serial.hpp  154  Info 1712: default constructor not defined for class
+    'SerialXMitError'
+_
+};
+.\qserial\qserial.hpp  163  Info 1712: default constructor not defined for
+    class 'MessageExchange'
+                        _
+    ~BMessageExchange() { delete cmd; delete reply; }
+.\brewport\brewexc.hpp  49  Warning 1509: base class destructor for class
+    'MessageExchange' is not virtual
+_
+};
+.\brewport\brewexc.hpp  51  Info 1712: default constructor not defined for
+    class 'BMessageExchange'
+_
+} DeviceStatus;
+.\motor\device.hpp  39  Info 726: Extraneous comma ignored
+_
+};
+.\motor\device.hpp  81  Info 1712: default constructor not defined for class
+    'Device'
+_
+};
+.\motor\device.hpp  104  Info 1712: default constructor not defined for class
+    'AscDevice'
+_
+};
+.\motor\device.hpp  141  Info 1712: default constructor not defined for class
+    'OpDevice'
+                                    _
+    void stripFormattingChars(void) {}
+.\motor\device.hpp  150  Warning 1511: Member hides non-virtual member
+    OpDevice::stripFormattingChars(void) (line 58, file motor\device.cpp)
+_
+};
+.\motor\device.hpp  158  Info 1712: default constructor not defined for class
+    'LoadDevice'
+_
+};
+.\cmd\cmdini.hpp  43  Info 1712: default constructor not defined for class
+    'BrewerCMDINI'
+_
+};
+.\cmd\cmddisp.hpp  55  Info 1712: default constructor not defined for class
+    'Display'
+                                                        _
+typedef enum { loadMode = 0, cosmacMode, operatingMode, } ModeType;
+.\cmd\llcomm.hpp  18  Info 726: Extraneous comma ignored
+_
+};
+.\cmd\llcomm.hpp  89  Info 1712: default constructor not defined for class
+    'LowLevelBrewer'
+_
+};
+.\cmd\llcomm.hpp  96  Info 1712: default constructor not defined for class
+    'MissingDeviceFatal'
+_
+};
+.\cmd\llcomm.hpp  110  Info 1712: default constructor not defined for class
+    'MissingCMDObject'
+              _
+    ~Brewer() {}
+.\cmd\cmdcomm.hpp  26  Warning 1509: base class destructor for class
+    'LowLevelBrewer' is not virtual
+                     _
+    void status(void);
+.\cmd\cmdcomm.hpp  27  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::status(void) (line 159, file cmd\llcomm.cpp)
+                                                                            _
+    void switchTo(ModeType m, SerialPort::BaudRate b = SerialPort::baud4800);
+.\cmd\cmdcomm.hpp  29  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::switchTo(enum {...}, BaudRate) (line 182, file
+    cmd\llcomm.cpp)
+                                     _
+    int loadTopCode(const char* file);
+.\cmd\cmdcomm.hpp  31  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::loadTopCode(const char *) (line 271, file cmd\llcomm.cpp)
+                        _
+    void warmReset(void);
+.\cmd\cmdcomm.hpp  33  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::warmReset(void) (line 338, file cmd\llcomm.cpp)
+                            _
+    int checkSYNStatus(void);
+.\cmd\cmdcomm.hpp  35  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::checkSYNStatus(void) (line 350, file cmd\llcomm.cpp)
+                                 _
+    void command(const char* cmd);
+.\cmd\cmdcomm.hpp  37  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::command(const char *) (line 367, file cmd\llcomm.cpp)
+                                           _
+    char* commandWithReply(const char* cmd);
+.\cmd\cmdcomm.hpp  38  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::commandWithReply(const char *) (line 374, file
+    cmd\llcomm.cpp)
+                                         _
+    void lowLevelCommand(const char* cmd);
+.\cmd\cmdcomm.hpp  40  Warning 1511: Member hides non-virtual member
+    LowLevelBrewer::lowLevelCommand(const char *) (line 381, file
+    cmd\llcomm.cpp)
+_
+};
+.\cmd\cmdcomm.hpp  42  Info 1712: default constructor not defined for class
+    'Brewer'
+_
+{
+cmd\brewcmd.cpp  72  Warning 525: Negative indentation from line 71
+                                             _
+                brewer.loadTopCode(parameter);
+cmd\brewcmd.cpp  145  Warning 534: Ignoring return value of
+    Brewer::loadTopCode(const char *) (compare with line 33, file
+    cmd\cmdcomm.cpp)
+                                                      _
+                        ifile.getline(temp, 200, '\n');
+cmd\brewcmd.cpp  174  Warning 534: Ignoring return value of
+    istream::getline(char *, int, char) (compare with line 444, file
+    g:\swapps\bc45\include\iostream.h, module except\exchlplt.cpp)
+                                                         _
+                        ifile.getline(&temp[2], 198, '=');
+cmd\brewcmd.cpp  178  Warning 534: Ignoring return value of
+    istream::getline(char *, int, char) (compare with line 444, file
+    g:\swapps\bc45\include\iostream.h, module except\exchlplt.cpp)
+                                                                                    _
+                        ifile.getline(&temp[strlen(temp)], 200 - strlen(temp), '\n');
+cmd\brewcmd.cpp  180  Warning 534: Ignoring return value of
+    istream::getline(char *, int, char) (compare with line 444, file
+    g:\swapps\bc45\include\iostream.h, module except\exchlplt.cpp)
+                                                      _
+                    ifile.getline(&temp[1], 199, '\n');
+cmd\brewcmd.cpp  223  Warning 534: Ignoring return value of
+    istream::getline(char *, int, char) (compare with line 444, file
+    g:\swapps\bc45\include\iostream.h, module except\exchlplt.cpp)
+                                                                  _
+                    do { temp[1] = ifile.get(); ofile.put(temp[1]); } while(isspace(temp[1]));
+cmd\brewcmd.cpp  264  Warning 534: Ignoring return value of ostream::put(char)
+    (compare with line 701, file g:\swapps\bc45\include\iostream.h)
+                                                      _
+                        ifile.getline(temp, 200, '\n');
+cmd\brewcmd.cpp  267  Warning 534: Ignoring return value of
+    istream::getline(char *, int, char) (compare with line 444, file
+    g:\swapps\bc45\include\iostream.h, module except\exchlplt.cpp)
+                                                         _
+                        ifile.getline(&temp[2], 198, '=');
+cmd\brewcmd.cpp  273  Warning 534: Ignoring return value of
+    istream::getline(char *, int, char) (compare with line 444, file
+    g:\swapps\bc45\include\iostream.h, module except\exchlplt.cpp)
+                                                      _
+                        ifile.getline(temp, 200, '\n');
+cmd\brewcmd.cpp  277  Warning 534: Ignoring return value of
+    istream::getline(char *, int, char) (compare with line 444, file
+    g:\swapps\bc45\include\iostream.h, module except\exchlplt.cpp)
+                                     _
+                remove("brewcmd.bak");
+cmd\brewcmd.cpp  282  Warning 534: Ignoring return value of remove(const char
+    *) (compare with line 315, file g:\swapps\bc45\include\stdio.h, module
+    except\exchlplt.cpp)
+                                                _
+                rename(parameter, "brewcmd.bak");
+cmd\brewcmd.cpp  283  Warning 534: Ignoring return value of rename(const char
+    *, const char *) (compare with line 316, file g:\swapps\bc45\include\stdio.h,
+    module except\exchlplt.cpp)
+                                                _
+                rename("brewcmd.tmp", parameter);
+cmd\brewcmd.cpp  284  Warning 534: Ignoring return value of rename(const char
+    *, const char *) (compare with line 316, file g:\swapps\bc45\include\stdio.h,
+    module except\exchlplt.cpp)
+                   _
+            getch();
+cmd\brewcmd.cpp  309  Warning 534: Ignoring return value of getch(void)
+    (compare with line 286, file g:\swapps\bc45\include\conio.h, module
+    cmd\llcomm.cpp)
+    _
+    return 0;
+cmd\brewcmd.cpp  311  Info 725: Expected positive indentation from line 71
+_
+}
+cmd\brewcmd.cpp  312  Warning 525: Negative indentation from line 71
+_
+}
+cmd\brewcmd.cpp  319  Warning 533: function main(void) should return a value
+    (see line 69)
+
+--- Global Wrap-up
+
+Info 765: external findCommand(char *) (line 321, file cmd\brewcmd.cpp) could
+    be made static
+Info 765: external iniFileName (line 15, file cmd\cmdini.cpp) could be made
+    static
+Info 765: external sc (line 64, file cmd\brewcmd.cpp) could be made static
+Info 765: external eotState (line 21, file brewport\bascport.cpp) could be made
+    static
+Info 759: header declaration for nullstring (line 17, file except\exchlplt.cpp)
+    could be moved from header to module
+Info 765: external nullstring (line 17, file except\exchlplt.cpp) could be made
+    static
+Warning 1512: destructor for base class ExcBadParameter (line 247, file
+    .\except\except.hpp, module except\exchlplt.cpp) is not virtual
+Warning 1512: destructor for base class ExcCommError (line 198, file
+    .\except\except.hpp, module except\exchlplt.cpp) is not virtual
+Warning 1512: destructor for base class ExcSyntaxError (line 168, file
+    .\except\except.hpp, module except\exchlplt.cpp) is not virtual
+Warning 1512: destructor for base class ExcDebug (line 219, file
+    .\except\except.hpp, module except\exchlplt.cpp) is not virtual
+Warning 1512: destructor for base class ExcTimeout (line 178, file
+    .\except\except.hpp, module except\exchlplt.cpp) is not virtual
+Warning 1512: destructor for base class ExcTooBig (line 188, file
+    .\except\except.hpp, module except\exchlplt.cpp) is not virtual
+Warning 1512: destructor for base class MessageExchange (line 49, file
+    .\qserial\qserial.hpp, module qserial\qserial.cpp) is not virtual
+Warning 1512: destructor for base class BaseException (line 143, file
+    .\except\except.hpp, module except\exchlplt.cpp) is not virtual
+Warning 1512: destructor for base class LowLevelBrewer (line 20, file
+    .\cmd\llcomm.hpp, module cmd\llcomm.cpp) is not virtual
+Info 755: global macro HAS_EXCEPTIONS (line 130, file .\except\except.hpp) not
+    referenced
+Info 758: global class ExcFileNotFound (line 158, file .\except\except.hpp) not
+    referenced
+Info 758: global class ExcPassword (line 208, file .\except\except.hpp) not
+    referenced
+Info 758: global class ExcDebugMsg (line 229, file .\except\except.hpp) not
+    referenced
+Info 758: global class ExcResources (line 237, file .\except\except.hpp) not
+    referenced
+Info 758: global class ExcCalcError (line 257, file .\except\except.hpp) not
+    referenced
+Info 758: global class ExcWrongHardware (line 267, file .\except\except.hpp)
+    not referenced
+Info 758: global class ExcDead (line 274, file .\except\except.hpp) not
+    referenced
+Info 758: global class TransmissionTooLong (line 53, file .\brewport\brewexc.hpp)
+    not referenced
+Info 758: global class MissingDeviceFatal (line 91, file .\cmd\llcomm.hpp) not
+    referenced
+Info 758: global class NoCommunications (line 98, file .\cmd\llcomm.hpp) not
+    referenced
+Info 758: global class MissingCMDObject (line 105, file .\cmd\llcomm.hpp) not
+    referenced
+Info 1714: Member function BaseException::log(void) (line 8, file
+    except\excnolog.cpp) not referenced
+Info 1714: Member function ExcFileNotFound::ExcFileNotFound(const string &)
+    (line 161, file .\except\except.hpp) not referenced
+Info 1714: Member function ExcFileNotFound::ExcFileNotFound(void) (line 162,
+    file .\except\except.hpp) not referenced
+Info 1714: Member function ExcSyntaxError::ExcSyntaxError(const string &) (line
+    171, file .\except\except.hpp) not referenced
+Info 1714: Member function ExcTimeout::ExcTimeout(const string &) (line 181,
+    file .\except\except.hpp) not referenced
+Info 1714: Member function ExcTooBig::ExcTooBig(const string &) (line 191, file
+    .\except\except.hpp) not referenced
+Info 1714: Member function ExcCommError::ExcCommError(const string &) (line
+    201, file .\except\except.hpp) not referenced
+Info 1714: Member function ExcPassword::ExcPassword(const string &) (line 211,
+    file .\except\except.hpp) not referenced
+Info 1714: Member function ExcPassword::ExcPassword(void) (line 212, file
+    .\except\except.hpp) not referenced
+Info 1714: Member function ExcDebug::ExcDebug(const string &) (line 222, file
+    .\except\except.hpp) not referenced
+Info 1714: Member function ExcDebugMsg::ExcDebugMsg(char *, int) (line 232,
+    file .\except\except.hpp) not referenced
+Info 1714: Member function ExcResources::ExcResources(const string &) (line
+    240, file .\except\except.hpp) not referenced
+Info 1714: Member function ExcResources::ExcResources(void) (line 241, file
+    .\except\except.hpp) not referenced
+Info 1714: Member function ExcBadParameter::ExcBadParameter(const string &)
+    (line 250, file .\except\except.hpp) not referenced
+Info 1714: Member function ExcCalcError::ExcCalcError(const string &) (line
+    260, file .\except\except.hpp) not referenced
+Info 1714: Member function ExcCalcError::ExcCalcError(void) (line 261, file
+    .\except\except.hpp) not referenced
+Info 1714: Member function ExcWrongHardware::ExcWrongHardware(const string &)
+    (line 270, file .\except\except.hpp) not referenced
+Info 1714: Member function ExcWrongHardware::ExcWrongHardware(void) (line 271,
+    file .\except\except.hpp) not referenced
+Info 1714: Member function ExcDead::ExcDead(const string &) (line 277, file
+    .\except\except.hpp) not referenced
+Info 1714: Member function ExcDead::ExcDead(void) (line 278, file
+    .\except\except.hpp) not referenced
+Info 769: global enumeration constant CommPort::nocom (line 20, file
+    .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant BaudRateEnum::baud150 (line 21, file
+    .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant BaudRateEnum::baud600 (line 21, file
+    .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant BaudRateEnum::baud2400 (line 22, file
+    .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant BaudRateEnum::baud19200 (line 22, file
+    .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant BaudRateEnum::baud38400 (line 23, file
+    .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant BaudRateEnum::baud57K (line 23, file
+    .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant BaudRateEnum::baud115K (line 23, file
+    .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant Parity::oddParity (line 40, file
+    .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant Parity::evenParity (line 40, file
+    .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant DataBits::data7 (line 41, file
+    .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant StopBits::stop2 (line 42, file
+    .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant HandShakeSelection::bothShakes (line 44,
+    file .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant HandShakeSelection::onlyCTS (line 44,
+    file .\serial\serial.hpp) not referenced
+Info 769: global enumeration constant HandShakeSelection::onlyDSR (line 44,
+    file .\serial\serial.hpp) not referenced
+Info 1714: Member function SerialPort::pause(void) (line 101, file
+    serial\serial.cpp) not referenced
+Info 1714: Member function SerialPort::resume(void) (line 110, file
+    serial\serial.cpp) not referenced
+Info 1714: Member function SerialPort::brk(int) (line 140, file
+    serial\serial.cpp) not referenced
+Info 1714: Member function SerialPort::send(char *) (line 100, file
+    .\serial\serial.hpp) not referenced
+Info 1714: Member function QueuedPort::isIdle(void) (line 117, file
+    .\qserial\qserial.hpp) not referenced
+Info 1714: Member function MessageExchange::abort(void) (line 151, file
+    .\qserial\qserial.hpp) not referenced
+Info 1714: Member function MessageExchange::succeeded(void) (line 156, file
+    .\qserial\qserial.hpp) not referenced
+Info 1714: Member function MessageExchange::explain(void) (line 158, file
+    .\qserial\qserial.hpp) not referenced
+Warning 1526: Member function MessageExchange::explain(void) (line 158, file
+    .\qserial\qserial.hpp) not defined
+Info 1714: Member function BMessageExchange::BMessageExchange(QueuedPort *)
+    (line 40, file .\brewport\brewexc.hpp) not referenced
+Info 1714: Member function BMessageExchange::BMessageExchange(QueuedPort *,
+    char *) (line 44, file .\brewport\brewexc.hpp) not referenced
+Info 1714: Member function LoadDevice::stripFormattingChars(void) (line 150,
+    file .\motor\device.hpp) not referenced
+Info 1714: Member function Brewer::checkSYNStatus(void) (line 45, file
+    cmd\cmdcomm.cpp) not referenced

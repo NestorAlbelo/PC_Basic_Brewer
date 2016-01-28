@@ -1,0 +1,262 @@
++-*/=^<>;.,:()
+BEEP - Generates a beep sound from your computer's speaker
+BLOAD - Loads a file created by BSAVE into memory
+BSAVE - Copies the contents of an area of memory to a file
+CALL - Transfers control to a SUB procedure
+CALL ABSOLUTE - Transfers control to a machine-language procedure
+CHAIN - Transfers control from the current program to another Basic program
+CHDIR - Changes a drive's default directory
+CIRCLE - Draws a circle or ellipse on the screen
+CLEAR - Closes all files, releases file buffers, clears all common variables, sets numeric variables and arrays to zero...
+CLOSE - Closes one or more open files or devices
+CLS - Clears the screen
+COLOR - Sets the screen display colors
+COM - Enables, disables, or suspends event trapping on a communications port
+COMMON - Defines global variables that can be shared throughout a program or between chained programs
+CONST - Declares one or more symbolic constants
+DATA - Specifies values to be read by subsequent READ statements
+DATE$ - Sets the current system date on your computer
+DECLARE - Declares a FUNCTION or SUB procedure and invokes data type checking.
+DEF FN - Defines a function
+DEF SEG - Sets the current segment address
+DEFDBL - Sets a default double precision data type for variables, DEF FNfunctions, and FUNCTION procedures
+DEFINT - Sets a default integer data type for variables, DEF FNfunctions, and FUNCTION procedures
+DEFLNG - Sets a default long integer data type for variables, DEF FNfunctions, and FUNCTION procedures
+DEFSNG - Sets a default single precision data type for variables, DEF FNfunctions, and FUNCTION procedures
+DEFSTR - Sets a default string data type for variables, DEF FNfunctions, and FUNCTION procedures
+DIM - Declares an array or specifies a data type for a nonarray variable
+DO ...
+LOOP - Repeats a block of statements while a condition is true or until a condition becomes true
+DRAW - Draws an object
+END - Ends a program, procedure, block, or user-defined data type
+END SELECT ...
+END TYPE ...
+END IF ...
+ENVIRON - Changes or adds an environment string in the DOS environment table
+ERASE - Reinitializes array elements or frees dynamic array storage space
+ERROR - Simulates an occurrence of a Basic error or a user-defined error
+EXIT - Exits a DO or FOR loop, a FUNCTION or SUB procedure, or a DEF FNfunction
+FIELD - Allocates space for variables in a random-access file buffer
+FILES - Displays the contents of the current directory or a specified directory
+FOR ...
+NEXT - Repeats a block of statements a specified number of times
+FUNCTION - Defines a FUNCTION procedure
+GET (File I/O) - Reads from a file into a random-access buffer or variable
+GET (Graphics) - Captures a graphics screen image
+GOSUB - Branches to a subroutine
+GOTO - Branches to a specified line
+IF ...
+THEN ...
+ELSE - Executes a statement or statement block depending on specified conditions
+INPUT - Reads input from the keyboard or a file
+IOCTL - Transmits a control string to a device driver
+KEY (Assignment) - Assigns string values to function keys and, optionally, displays key values
+KEY (Event Trapping) - Enables, disables, or suspends event trapping of a key
+KILL - Deletes files from disk
+LET - Assigns the value of an expression to a variable
+LINE - Draws a line or rectangle on the screen
+LINE INPUT - Reads a line of up to 255 characters from the keyboard or a file
+LOCATE - Moves the cursor to a specified position on the screen
+LOCK - Limits or prevents access to a file by a network process
+LPRINT - Prints data on the printer LPT1
+LPRINT USING - Prints formatted output on the printer LPT1
+LSET - Moves data into a random-access file buffer, left-justifies the value of a string variable and also copies the contents...
+MID$ - Replaces part of a string variable with another string
+MKDIR - Removes a subdirectory
+NAME - Renames a file or directory
+ON COM - Enables, disables, or suspends event trapping on a communications port
+ON ERROR - Enables error handling and, when a run-time error occurs, directs your program to either branch to an...
+ON KEY - If event trapping is enabled, branches to a subroutine whenever the key is pressed
+ON PEN - If event trapping is enabled, branches to a subroutine whenever the light pen is activated
+ON PLAY - If event trapping is enabled, branches to a subroutine whenever the music buffer contains fewer than a specified...
+ON STRIG - If event trapping is enabled, branches to a subroutine whenever a specified joystick trigger is pressed
+ON TIMER - If event trapping is enabled, branches to a subroutine whenever a specified number of seconds has elapsed
+ON ...
+GOSUB - Branch to one of several locations, depending on the value of an expression
+ON ...
+GOTO - Branch to one of several locations, depending on the value of an expression
+OPEN - Opens a file or device
+OPEN COM - Opens and initializes a communications channel for input or output (I/O)
+OPTION BASE - Sets the default lower bound for array subscripts
+OUT - Sends a byte to a hardware I/O port
+PAINT - Fills a graphics area with a specified color or pattern
+PALETTE - Change the color assignments of color attributes in the current screen mode
+PCOPY - Copies one video memory page to another
+PEN - Enables, disables, or suspends light-pen event trapping
+PLAY (Music) - Plays musical notes
+PLAY (Event Trapping) - If event trapping is enabled, branches to a subroutine whenever the music buffer contains fewer...
+POKE - Writes a byte value to a specified memory location
+PRESET - Draw a specified point on the screen
+PRINT - Writes data to the screen or to a file
+PRINT USING - Writes formatted output to the screen or to a file
+PSET - Draw a specified point on the screen
+PUT (File I/O) - Writes a variable or random-access buffer to a file
+PUT (Graphics) - Displays an image captured by GET
+RANDOMIZE - Initializes the random-number generator
+READ - Reads DATA values and assigns them to variables
+REDIM - Declares or resizes a dynamic array, erasing any previous values
+REM - Allows explanatory remarks to be inserted in a program
+RESET - Closes all open files and devices
+RESTORE - Allows READ to reread values in specified DATA statements
+RESUME - Resumes program execution after an error-handling routine
+RETURN - Returns from a subroutine
+RMDIR - Removes a subdirectory
+RSET - Moves data into a random-access file buffer, right-justifies the value of a string variable and also copies the contents...
+RUN - Runs the current program or a specified program
+SCREEN - Sets the screen mode and other characteristics of your screen
+SEEK - Sets the file position for the next read or write
+SELECT ...
+SELECT CASE - Executes one of several statement blocks depending on the value of an expression
+SHARED - Gives procedures access to module-level variables
+SHELL - Suspends execution of a Basic program to run a DOS command or batch file
+SLEEP - Suspends program execution
+SOUND - Generates a sound through your computer's speaker
+STATIC - Makes a variable local to a function or procedure and preserves its value between calls
+STOP - Halts a program
+STRIG - Enables, disables, or suspends joystick event trapping
+SUB - Defines a SUB procedure
+SWAP - Exchanges the values of two variables
+SYSTEM - Closes all open files and returns control to the operating system
+TIME$ - Sets the current system time on your computer
+TIMER - Enables, disables, or suspends timer event trapping
+TROFF - Disables tracing of program statements
+TRON - Enables tracing of program statements
+TYPE - Defines a data type containing one or more elements
+UNLOCK - Releases the locks imposed by the last LOCK statement
+VIEW - Defines the size and location of a viewport where graphics can be displayed on the screen
+VIEW PRINT - Sets the boundaries of the screen text viewport
+WAIT - Suspends program execution until a specified bit pattern is input from an input port
+WHILE ...
+WEND - Executes a series of statements as long as a specified condition is true
+WIDTH - Assign an output-line width to a device (such as a printer) or file, or change the number of screen-display columns...
+WINDOW - Defines logical dimensions for the current graphics viewport
+WRITE - Writes data to the screen or a sequential file
+
+
+ABS - Returns the absolute value of a number
+ASC - Returns the ASCII code for the first character in a string expression
+ATN - Returns the arctangent of a specified numeric expression
+CDBL - Converts a numeric expression to a double-precision value
+CHR$ - Returns the character corresponding to a specified ASCII code
+CINT - Rounds a numeric expression to an integer
+CLNG - Rounds a numeric expression to a long (4-byte) integer
+COS - Returns the cosine of a specified angle
+CSNG - Converts a numeric expression to a single-precision value
+CSRLIN - Returns the current row position of the cursor
+CVD - Converts string variables in FIELD statements to double-precision numbers
+CVDMBF - Converts Microsoft-Binary-format numeric strings to double-precision IEEE-format numbers
+CVI - Converts string variables in FIELD statements to integers
+CVL - Converts string variables in FIELD statements to long integers
+CVS - Converts string variables in FIELD statements to single-precision numbers
+CVSMBF - Converts Microsoft-Binary-format numeric strings to single-precision IEEE-format numbers
+DATE$ - Returns the computer's current system date
+ENVIRON$ - Returns a DOS environment string
+EOF - Tests for the end of a file
+ERDEV - Returns an error code from the last device that generated a critical error
+ERDEV$ - Returns the name of the device that generated a critical error
+ERL - returns the line number where the error occurred, or the closest line number before the line where the error occurred
+ERR - Returns the run-time error code for the most recent error
+EXP - EXP returns e raised to a specified power, where e is the base of natural logarithms
+FILEATTR - Returns information about an open file
+FIX - Truncates a floating-point expression to its integer portion
+FRE - Returns the amount (in bytes) of available or unused memory
+FREEFILE - Returns the next valid unused file number
+HEX$ - Returns a hexadecimal string representation of a number
+INKEY$ - Reads a character from the keyboard
+INP - Returns a byte read from a hardware I/O port
+INPUT$ - Returns a string of characters read from a specified file
+INSTR - Returns the position of the first occurrence of a string in another string
+INT - Returns the largest integer less than or equal to a numeric expression
+IOCTL$ - Returns current status information from a device driver
+LBOUND - Returns the lower bound (smallest available subscript) for the specified array dimension
+LCASE$ - Convert strings to all lowercase or all uppercase letters
+LEFT$ - Returns a specified number of leftmost characters in a string
+LEN - Returns the number of characters in a string or the number of bytes required to store a variable
+LOC - Returns the current position within a file
+LOF - Returns the length of a file in bytes
+LOG - Returns the natural logarithm of a numeric expression
+LPOS - Returns the number of characters sent to a printer since the last carriage return was sent
+LTRIM$ - Removes leading spaces from a string
+MID$ - Returns part of a string (a substring)
+MKD$ - Converts double-precision numbers to numeric strings that can be stored in FIELD statement string variables
+MKDMBF$ - Converts IEEE-format numbers to double-precision Microsoft-Binary-format numeric strings
+MKI$ - Converts integer numbers to numeric strings that can be stored in FIELD statement string variables
+MKL$ - Converts long integer numbers to numeric strings that can be stored in FIELD statement string variables
+MKS$ - Converts single-precision numbers to numeric strings that can be stored in FIELD statement string variables
+MKSMBF$ - Converts IEEE-format numbers to single-precision Microsoft-Binary-format numeric strings
+OCT$ - Returns an octal string representation of a number
+PEEK - Returns a byte value stored at a specified memory location
+PEN - Returns the status of the light pen
+PLAY - Returns the number of notes in the background music queue
+PMAP - Returns the window coordinate equivalent to a viewport coordinate, as defined by the WINDOW statement, or vice...
+POINT - Returns the current graphics cursor coordinates or the color attribute of a specified pixel
+POS - Returns the current column position of the cursor
+RIGHT$ - Returns a specified number of rightmost characters in a string
+RND - Returns a single-precision random number between 0 and 1
+RTRIM$ - Removes trailing spaces from a string
+SCREEN - Returns the ASCII value or color attribute of a character at a specified screen location
+SEEK - Returns the current file position
+SGN - Returns a value indicating the sign of a numeric expression
+SIN - Return the sine of a specified angle
+SPACE$ - Returns a string of spaces
+SPC - Skips a specified number of spaces in a PRINT or LPRINT statement
+SQR - Returns the square root of a numeric expression
+STICK - Returns the coordinates of a joystick
+STR$ - Returns a string representation of a number
+STRIG - Returns the status of a joystick trigger
+STRING$ - Returns a string of a specified length made up of a repeating character
+TAB - Moves the text cursor to a specified print position
+TAN - Returns the tangent of a specified angle
+TIME$ - Returns the computer's current system time
+TIMER - Returns the number of seconds elapsed since midnight
+UBOUND - Returns the upper bound (largest available subscript) for the specified array dimension
+UCASE$ - Convert strings to all lowercase or all uppercase letters
+VAL - Converts a string representation of a number to a number
+VARPTR - Returns the offset address of a variable
+VARPTR$ - Returns a string representation of a variable's address for use in DRAW and PLAY statements
+VARSEG - Returns the segment address of a variable
+
+
+ABSOLUTE - see CALL ABSOLUTE
+ACCESS - Specifies the type of access users have to an opened file
+ANY - see DECLARE, FUNCTION and SUB
+APPEND - Specifies that the file is to be opened for sequential output and sets the file pointer to the end of the file
+AS - Performs different actions as part of several statements
+BASE - see OPTION BASE
+BINARY - Specifies a binary-file mode in the OPEN statement
+CASE - Executes one of several statement blocks depending on the value of an expression
+CASE IS - Precedes relational operators in expressions in SELECT...CASE statements
+CASE ELSE -
+DOUBLE - Specifies double-precision 64-bit floating-point variables in a declarative statement or parameter list
+ELSE - Executes a statement or statement block depending on specified conditions
+ELSEIF - Executes a statement or statement block depending on specified conditions
+INTEGER - Specifies 16-bit signed integer variables in a declarative statement or parameter list
+LIST - Assigns string values to function keys and, optionally, displays key values
+LONG - Specifies 32-bit signed integer variables in a declarative statement or parameter list
+LOOP - Repeats a block of statements while a condition is true or until a condition becomes true
+NEXT - Increments and tests the counter in a FOR...NEXT loop or, when used with RESUME, continues execution from an ...
+OFF - Turns off the display of function key assignments or disables event trapping
+ON - Performs different actions as part of several statements
+OUTPUT - Specifies that the file is opened for sequential output
+RANDOM - Specifies that the file is opened in random-access file mode
+SINGLE - Specifies single-precision 32-bit floating-point variables in a declarative statement or parameter list
+STEP - In a FOR...NEXT loop, specifies how much to increase the counter in each iteration
+STRING - Specifies string variables in a declarative statement or parameter list
+THEN - Executes a statement or statement block depending on specified conditions
+TO - Specifies ranges for different statements
+UNTIL - Repeats a block of statements while a condition is true or until a condition becomes true
+USING - Specifies formatting for PRINT USING and LPRINT USING statements and the palette assignments for the PALETTE...
+WEND - Executes a series of statements as long as a specified condition is true
+
+
+AND - Boolean operator (Conjunction)
+EQV - Boolean operator (Equivalence)
+IMP - Boolean operator (Implication)
+MOD - Divides one number by another and returns the remainder
+NOT - Boolean operator (Bit-wise complement)
+OR - Boolean operator (Disjunction (inclusive "or"))
+XOR - Boolean operator (Exclusive "or")
+
+
+'$DYNAMIC - Sets the default array storage as dynamic
+'$STATIC - Sets the default array storage as static

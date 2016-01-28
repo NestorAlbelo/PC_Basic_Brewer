@@ -1,0 +1,92 @@
+/*
+ * bascport.cpp
+ *
+ * This is the implementation for the BrewerAscPort class.
+ *
+ * Copyright(C) 1995, SCI-TEC Instruments Inc.
+ */
+
+#include <ctype.h>
+#include <string.h>
+#include ".\device\bascdev.hpp"
+#include ".\port\bascport.hpp"
+
+#ifndef _NO_VERSION_INFO
+#   include ".\version\version.hpp"
+
+    static Version ver("BAscPort", 1, 2);
+    // See Version.hpp
+#endif
+
+// State variable for tracking EOT sequence
+int     eotState;
+
+class TransmissionTooLong : public ExcTooBig, public ExcCommError, public virtual BaseException
+{
+public:
+    TransmissionTooLong(void) :
+        BaseException(helpdescribe("Transmission too long")) {}
+};
+
+void BrewerAscPort::transmit()
+{
+	// If NO_CMD, don't transmit anything!!
+	if (strcmp(first->cmd, NO_CMD))
+	{
+		put(first->cmd);            // <type><body>
+		put("\x0D",1);              // EOT
+	}
+    charIndex = 0;              // prepare to receive
+    strcpy(reply, "");
+    mark(2);
+    eotState = 0;
+}
+
+void BrewerAscPort::interpret()
+{
+    if (charIndex >= maxBReply)
+    {
+        throw TransmissionTooLong();
+    }
+    else switch(newCharacter)
+    {
+    // Note that the terminating sequence is "\x00-> " (space included!)
+    case 0:
+        eotState = 1;
+        break;
+    case '-':
+        if(eotState == 1)
+            eotState = 2;
+        else
+        {
+			reply[charIndex++] = newCharacter;
+            eotState = 0;
+        }
+        break;
+    case '>':
+        if(eotState == 2)
+            eotState = 3;
+        else
+        {
+            reply[charIndex++] = newCharacter;
+            eotState = 0;
+        }
+        break;
+    case ' ':
+        if(eotState == 3)
+        {
+            reply[charIndex] = '\0';
+            status = success;
+        }
+        else
+            reply[charIndex++] = newCharacter;
+        eotState = 0;
+        break;
+    default:
+        eotState = 0;
+        if(isprint(newCharacter))
+            reply[charIndex++] = newCharacter;
+        break;
+    }
+}
+

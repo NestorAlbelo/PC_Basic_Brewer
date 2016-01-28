@@ -1,0 +1,14 @@
+-d_NO_VERSION_INFO       // From the IDE
+except\exchlplt.cpp
+except\excnolog.cpp
+except\excdcmd.cpp
+serial\serial.cpp
+qserial\qserial.cpp
+brewport\bascport.cpp
+brewport\bopport.cpp
+motor\device.cpp
+cmd\llcomm.cpp
+cmd\cmdcomm.cpp
+cmd\cmddisp.cpp
+cmd\cmdini.cpp
+cmd\brewcmd.cpp
